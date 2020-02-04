@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>594</width>
+    <height>461</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+	font: 12pt &quot;宋体&quot;;
+}
+
+QLineEdit{
+     border: 2px groove gray;
+     border-radius: 5px;
+     padding: 2px 4px;
+     border-color: rgb(12,45,68);
+}
+
+QComboBox::drop-down{ image: url(:/images/images/down.bmp); }
+
+QSpinBox::up-button{ image: url(:/images/images/up.bmp); }
+QSpinBox::down-button{ image: url(:/images/images/down.bmp); }
+
+QCheckBox::indicator:checked{
+ image: url(:/images/images/checked.bmp);
+}
+
+QCheckBox::indicator:unchecked{
+image: url(:/images/images/unchecked.bmp);
+}
+
+</string>
+  </property>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>35</x>
+     <y>230</y>
+     <width>181</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Hello，你好</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>75</x>
+     <y>75</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>New Item</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QSpinBox" name="spinBox">
+   <property name="geometry">
+    <rect>
+     <x>195</x>
+     <y>75</y>
+     <width>86</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="value">
+    <number>12</number>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>155</y>
+     <width>79</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Checked</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBox_2">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>155</y>
+     <width>106</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Unchecked</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>215</y>
+     <width>64</width>
+     <height>64</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">     border: 2px groove red;
+     min-width:60px;
+     min-height:60px;
+     border-radius: 30px;
+</string>
+   </property>
+   <property name="text">
+    <string>OK</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

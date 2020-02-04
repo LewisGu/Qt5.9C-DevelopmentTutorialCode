@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WDialogData</class>
+ <widget class="QDialog" name="WDialogData">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>510</width>
+    <height>368</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>编辑记录</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>5</x>
+     <y>5</y>
+     <width>408</width>
+     <height>356</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>工  号</string>
+        </property>
+        <property name="buddy">
+         <cstring>spinEmpNo</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QSpinBox" name="spinEmpNo">
+        <property name="minimum">
+         <number>1</number>
+        </property>
+        <property name="maximum">
+         <number>10000</number>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>姓  名</string>
+        </property>
+        <property name="buddy">
+         <cstring>editName</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="editName"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>性  别</string>
+        </property>
+        <property name="buddy">
+         <cstring>comboSex</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QComboBox" name="comboSex">
+        <item>
+         <property name="text">
+          <string>男</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>女</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>身  高</string>
+        </property>
+        <property name="buddy">
+         <cstring>spinHeight</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QDoubleSpinBox" name="spinHeight">
+        <property name="suffix">
+         <string/>
+        </property>
+        <property name="maximum">
+         <double>3.000000000000000</double>
+        </property>
+        <property name="singleStep">
+         <double>0.010000000000000</double>
+        </property>
+        <property name="value">
+         <double>1.560000000000000</double>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>出生日期</string>
+        </property>
+        <property name="buddy">
+         <cstring>editBirth</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QDateEdit" name="editBirth">
+        <property name="displayFormat">
+         <string>yyyy-MM-dd</string>
+        </property>
+        <property name="calendarPopup">
+         <bool>true</bool>
+        </property>
+        <property name="date">
+         <date>
+          <year>2017</year>
+          <month>2</month>
+          <day>20</day>
+         </date>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_10">
+        <property name="text">
+         <string>手机号</string>
+        </property>
+        <property name="buddy">
+         <cstring>editMobile</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLineEdit" name="editMobile"/>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="label_7">
+        <property name="text">
+         <string>出生省份</string>
+        </property>
+        <property name="buddy">
+         <cstring>comboProvince</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QComboBox" name="comboProvince">
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+        <property name="currentText">
+         <string>北京</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>北京</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>上海</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>天津</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>重庆</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>安徽</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>河北</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>河南</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>湖北</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>湖南</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>山西</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>山东</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>陕西</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>江苏</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>江西</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="label_8">
+        <property name="text">
+         <string>城  市</string>
+        </property>
+        <property name="buddy">
+         <cstring>editCity</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QLineEdit" name="editCity"/>
+      </item>
+      <item row="8" column="0">
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>部  门</string>
+        </property>
+        <property name="buddy">
+         <cstring>comboDep</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="1">
+       <widget class="QComboBox" name="comboDep">
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+        <property name="currentText">
+         <string>销售部</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>销售部</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>技术部</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>生产部</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>行政部</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="11" column="1">
+       <widget class="QPlainTextEdit" name="editMemo">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="0">
+       <widget class="QLabel" name="label_9">
+        <property name="text">
+         <string>备   注</string>
+        </property>
+        <property name="buddy">
+         <cstring>editMemo</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="0">
+       <widget class="QLabel" name="label_11">
+        <property name="text">
+         <string>学  历</string>
+        </property>
+        <property name="buddy">
+         <cstring>comboEdu</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="1">
+       <widget class="QSpinBox" name="spinSalary">
+        <property name="prefix">
+         <string/>
+        </property>
+        <property name="minimum">
+         <number>1000</number>
+        </property>
+        <property name="maximum">
+         <number>50000</number>
+        </property>
+        <property name="singleStep">
+         <number>100</number>
+        </property>
+        <property name="value">
+         <number>1000</number>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="0">
+       <widget class="QLabel" name="label_12">
+        <property name="text">
+         <string>工  资</string>
+        </property>
+        <property name="buddy">
+         <cstring>spinSalary</cstring>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="1">
+       <widget class="QComboBox" name="comboEdu">
+        <property name="editable">
+         <bool>true</bool>
+        </property>
+        <property name="currentText">
+         <string>博士研究生</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>博士研究生</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>硕士研究生</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>大学本科</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>大学专科</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>高中</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>初中</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>小学</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label_13">
+        <property name="text">
+         <string>照  片</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="LabPhoto">
+        <property name="minimumSize">
+         <size>
+          <width>150</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>350</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>dbLabPhoto</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>9</y>
+     <width>82</width>
+     <height>216</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QPushButton" name="btnSetPhoto">
+      <property name="text">
+       <string>导入照片</string>
+      </property>
+      <property name="icon">
+       <iconset resource="res.qrc">
+        <normaloff>:/images/images/00.JPG</normaloff>:/images/images/00.JPG</iconset>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnClearPhoto">
+      <property name="text">
+       <string>清除照片</string>
+      </property>
+      <property name="icon">
+       <iconset resource="res.qrc">
+        <normaloff>:/images/images/103.bmp</normaloff>:/images/images/103.bmp</iconset>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnOK">
+      <property name="text">
+       <string>确  定</string>
+      </property>
+      <property name="icon">
+       <iconset resource="res.qrc">
+        <normaloff>:/images/images/704.bmp</normaloff>:/images/images/704.bmp</iconset>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btnClose">
+      <property name="text">
+       <string>取  消</string>
+      </property>
+      <property name="icon">
+       <iconset resource="res.qrc">
+        <normaloff>:/images/images/706.bmp</normaloff>:/images/images/706.bmp</iconset>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>btnClose</sender>
+   <signal>clicked()</signal>
+   <receiver>WDialogData</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>530</x>
+     <y>230</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>294</x>
+     <y>205</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>btnOK</sender>
+   <signal>clicked()</signal>
+   <receiver>WDialogData</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>530</x>
+     <y>173</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>294</x>
+     <y>205</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
